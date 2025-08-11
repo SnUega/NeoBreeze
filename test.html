@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEOSHOP CoolBreeze - Революционный вентилятор 3-в-1 ❄️</title>
+    <meta name="description" content="🔥 Супер акция -50%! Уникальный вентилятор CoolBreeze с охлаждением льдом, ароматизацией и LED подсветкой. Создайте идеальный микроклимат дома!">
+    <meta property="og:title" content="NEOSHOP CoolBreeze - Ледяная прохлада со скидкой 50%">
+    <meta property="og:description" content="Вентилятор 3-в-1 с охлаждением льдом. Акция ограничена!">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#1e40af">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❄️</text></svg>">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://example.com/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NEOSHOP CoolBreeze - Ледяная прохлада со скидкой 50%">
+    <meta name="twitter:description" content="Вентилятор 3-в-1 с охлаждением льдом. Акция ограничена!">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8' }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-up': 'slideUp 0.3s ease-out',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'pulse-custom': 'pulse-custom 4s infinite'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        
+        /* АНИМАЦИИ */
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translate(0); } }
+        @keyframes scaleIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        @keyframes shine { 
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            50% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+            100% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+        }
+        @keyframes pulse-custom { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.8; } }
+        
+        /* ГРАДИЕНТНЫЙ ТЕКСТ */
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* ГРАДИЕНТНЫЕ ФОНЫ */
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .gradient-blue { background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%); }
+        .gradient-purple { background: linear-gradient(135deg, #8b5cf6 0%, #5b21b6 100%); }
+        .gradient-green { background: linear-gradient(135deg, #10b981 0%, #047857 100%); }
+        .dynamic-bg { background: radial-gradient(1000px 600px at 30% 40%, var(--c1, #e0f2fe), transparent 60%),
+                                   radial-gradient(800px 500px at 70% 60%, var(--c2, #ede9fe), transparent 60%),
+                                   linear-gradient(135deg, var(--c3, #eff6ff) 0%, var(--c4, #f5f3ff) 100%); }
+        
+        /* БЛОК ЦЕНЫ С ЭФФЕКТОМ */
+        .price-block {
+            border: 2px solid #ef4444;
+            position: relative;
+            overflow: hidden;
+        }
+        .price-block::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+        
+        /* ЭФФЕКТЫ НАВЕДЕНИЯ */
+        .hover-scale:hover { transform: translateY(-8px) scale(1.02); }
+        .hover-glow:hover { box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3); }
+        
+        /* АНИМАЦИИ КОМПОНЕНТОВ */
+        .fade-in-up { animation: fadeInUp 0.8s ease-out; }
+        .scale-in { animation: scaleIn 0.6s ease-out; animation-fill-mode: both; }
+        .scale-in:nth-child(2) { animation-delay: 0.1s; }
+        .scale-in:nth-child(3) { animation-delay: 0.2s; }
+        .scale-in:nth-child(4) { animation-delay: 0.3s; }
+        
+        /* ПУЛЬСИРУЮЩИЙ ФОН */
+        .pulse-bg { animation: pulse-custom 4s infinite; }
+        
+        /* FLOATING ELEMENTS */
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        header {
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(90deg, #758aeb 0%,#9ba9ec 40%,#a4aee0 45%, #7447a0 75%,#758aeb 100%);
+            background-size: 200% 100%;
+            animation: gradientMove 3s linear infinite;
+        }
+
+        @keyframes gradientMove {
+            0% {
+            background-position: 0% 50%;
+            }
+            100% {
+            background-position: 200% 50%;
+            }
+        }
+
+        /* МОБИЛЬНАЯ НАСТРОЙКА HERO (<= 768px) */
+        @media (max-width: 768px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .benefits-grid { grid-template-columns: 1fr; }
+            .guarantee-grid { grid-template-columns: 1fr; }
+            /* Лёгкое осветление фона для повышения контраста текста */
+            .hero-section { padding-top: 0 !important; margin-top: -2rem; } /* тянет подложку к самому верху секции */
+            .hero-section .text-left { padding-top: 2.5rem; } /* воздух сверху под бейдж акции */
+            .hero-section {
+                background-position: 26% 15%; /* сдвигаем кадр правее и чуть вверх для лучшего кадра */
+                background-repeat: no-repeat;
+            }
+            .hero-section::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.35) 100%); /* затемняем фон для читабельности текста */
+                pointer-events: none;
+            }
+
+            /* Мягкая склейка низа hero с bg-gray-50 следующего блока */
+            .hero-section::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 5%;
+                background: linear-gradient(to bottom, rgba(249, 250, 251, 0) 0%, rgba(249, 250, 251, 1) 100%);
+                pointer-events: none;
+                z-index: 5;
+            }
+
+            /* Убираем стеклянную подложку: чистый текст поверх тёмной маски */
+            .hero-section .text-left {
+                background: transparent;
+                -webkit-backdrop-filter: none;
+                backdrop-filter: none;
+                box-shadow: none;
+                padding: 0.5rem 0 0.75rem;
+                margin: 0;
+                position: relative;
+                z-index: 10;
+            }
+
+            /* На всякий случай поднимем ключевые элементы над ::before */
+            .hero-section h1,
+            .hero-section p,
+            .hero-section .order-btn,
+            .hero-section button {
+                position: relative;
+                z-index: 11;
+            }
+
+            /* Контраст текста на затемнённом фоне */
+            .hero-section h1 { color: #ffffff !important; }
+            .hero-section p { color: rgba(255,255,255,0.92) !important; }
+
+            /* Мобильные размеры бейджа (оставляем прыжок) */
+            .hero-section .promo-badge { padding: 0.5rem 1rem !important; font-size: 0.775rem !important; margin-bottom: 1rem !important; }
+
+            /* Мобильные размеры кнопок */
+            .hero-section .order-btn { padding: 0.75rem 1rem !important; font-size: 1rem !important; }
+            .hero-section button[onclick*='how-works'] { padding: 0.75rem 1rem !important; font-size: 1rem !important; background-color: rgba(255,255,255,0.9) !important; }
+
+            /* Мягкая склейка верха следующего блока (#landing-products) с героем */
+            #landing-products { position: relative; }
+            #landing-products::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -1px;
+                height: 5%;
+                background: linear-gradient(to top, rgba(249, 250, 251, 0) 0%, rgba(249, 250, 251, 1) 100%);
+                pointer-events: none;
+                z-index: 1;
+            }
+        }
+        
+        /* МОДАЛЬНЫЕ ОКНА */
+        .modal { 
+            display: none; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .modal.active { 
+            display: flex; 
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            padding: 0;
+            margin: auto;
+            max-width: 90%;
+            max-height: 90%;
+            transform: scale(0.7);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: all 0.2s ease;
+        }
+        
+        .modal-close:hover {
+            background: rgba(0, 0, 0, 0.2);
+            transform: rotate(90deg);
+        }
+        
+        /* ПРЕДОТВРАЩЕНИЕ СКРОЛЛА ПРИ ОТКРЫТОЙ МОДАЛКЕ */
+        body.modal-open {
+            overflow: hidden;
+            padding-right: 17px;
+        }
+
+        .hide-block {
+            display: none;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "CoolBreeze Arctic Pro 3-в-1",
+      "image": [
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop"
+      ],
+      "description": "Революционный вентилятор с охлаждением льдом, ароматизацией и LED-подсветкой.",
+      "brand": {
+        "@type": "Brand",
+        "name": "NEOSHOP"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "2847"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "2990",
+        "availability": "https://schema.org/InStock",
+        "url": "https://example.com/",
+        "priceValidUntil": "2030-12-31"
+      }
+    }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center text-2xl font-bold text-blue-600">
+                    <img src="./IMG/logo.png" alt="logo" class="max-w-[5rem] mr-2">
+                    NEOSHOP
+                </div>
+                <div class="flex items-center space-x-4">
+                    <select id="lang-select" class="border rounded px-2 py-1 text-sm" aria-label="Language selector">
+                        <option value="ru">🇷🇺 RU</option>
+                        <option value="en">🇺🇸 EN</option>
+                        <option value="ro">🇷🇴 RO</option>
+                    </select>
+                    <a href="tel:+37360504199" class="hidden md:flex items-center text-blue-600 hover:text-blue-700">
+                        📞 +373-605-04-199
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO СЕКЦИЯ -->
+    <section class="hero-section bg-gradient-to-br from-blue-50 via-indigo-100 to-purple-100 py-12 md:py-20 relative overflow-hidden"  style="background-image: url('./IMG/hero-bg.webp'); background-size: cover;">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Слева – изображение с динамическим градиентом -->
+                <div id="hero-visual" class="relative dynamic-bg rounded-2xl p-0 md:p-0 hover-glow transition-all duration-500">
+                    
+                </div>
+
+                <!-- Справа – УТП и CTA -->
+                <div class="text-left lg:pl-4">
+                    <div class="flex justify-center">
+  <div class="promo-badge inline-block bg-red-500 text-white px-6 py-3 rounded-full text-lg font-bold mb-6 animate-bounce pulse-bg">
+    🔥 СУПЕР АКЦИЯ -50% - ТОЛЬКО СЕГОДНЯ!
+  </div>
+</div>
+
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        Забудьте о духоте! <span class="gradient-text">Ледяная прохлада</span> + ароматы тропиков в 1 устройстве
+                    </h1>
+
+                    <p class="text-xl text-gray-600 mb-8 max-w-3xl">
+                        Революционный вентилятор CoolBreeze 3-в-1 с охлаждением льдом, ароматизацией и LED-подсветкой. Создайте идеальный микроклимат в любом помещении за считанные секунды!
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 mb-6">
+                        <button class="order-btn gradient-blue text-white px-8 py-4 rounded-lg text-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105" aria-label="Оформить заказ со скидкой 50 процентов" data-analytics="hero">
+                            🛒 Заказать со скидкой 50%
+                        </button>
+                        <button class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300"
+                                onclick="document.getElementById('how-works').scrollIntoView({behavior: 'smooth'})">
+                            ▶️ Посмотреть как работает
+                        </button>
+                    </div>
+
+                    <!-- <div class="text-sm text-gray-500">
+                        ⏰ До конца акции осталось: <span id="timer" class="font-bold text-red-600">23:59:47</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК: ТОВАРЫ ИЗ ЛИНЕЙКИ -->
+    <section id="landing-products" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 gradient-text">
+                    Товары из нашей линейки
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Подобрали для вас популярные и полезные товары по отличным ценам
+                </p>
+            </div>
+
+            <div id="landing-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+    </section>
+
+    <!-- БЛОК 1: ГЛАВНЫЙ ТОВАР -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="hero-grid grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- БОЛЬШОЕ ФОТО СЛЕВА -->
+                <div class="relative">
+                    <div id="main-product-visual" class="relative dynamic-bg rounded-2xl p-8 hover-glow transition-all duration-500">
+                        <img id="main-product-image" src="IMG/mainfun.webp" 
+                             alt="CoolBreeze Arctic Pro - Революционный вентилятор 3-в-1" 
+                             class="w-full h-96 object-contain floating">
+                        
+                        <!-- FLOATING BADGES -->
+                        <div class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold animate-pulse">
+                            -50% СКИДКА
+                        </div>
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            ✅ В НАЛИЧИИ
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold">
+                            🔥 ХИТ ПРОДАЖ
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- УТП СПРАВА -->
+                <div class="space-y-6">
+                    <div>
+                        <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                            CoolBreeze Arctic Pro
+                            <span class="gradient-text">3-в-1</span>
+                        </h2>
+                        <p class="text-xl text-gray-600 mb-6">
+                            Революционный вентилятор с охлаждением льдом, ароматизацией и LED-подсветкой
+                        </p>
+                    </div>
+                    
+                    <!-- ЦЕНА -->
+                    <div class="price-block bg-gradient-to-r from-red-50 to-orange-50 p-6 rounded-xl border-2 border-red-200">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="text-4xl font-bold text-red-600">250 MDL</div>
+                            <div class="text-2xl text-gray-500 line-through">350 MDL</div>
+                            <div class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                                ЭКОНОМИЯ 100 MDL
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600">
+                            💳 Рассрочка 0% • 🚚 Бесплатная доставка • 🔄 14 дней на возврат
+                        </div>
+                    </div>
+                    
+                    <!-- УТП СПИСОК -->
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-xs">❄️</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Охлаждение льдом</h4>
+                                <p class="text-gray-600">Снижает температуру на 10-15°C за 30 секунд</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-xs">🌸</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Ароматизация воздуха</h4>
+                                <p class="text-gray-600">Встроенный диффузор для эфирных масел</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-xs">💡</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">LED-подсветка</h4>
+                                <p class="text-gray-600">7 цветов подсветки с режимом "Ночник"</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-xs">🔋</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Питание от USB</h4>
+                                <p class="text-gray-600">Работает где угодно — от сети, USB и пауэрбанка</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- КНОПКИ ДЕЙСТВИЙ -->
+                    <div class="space-y-3">
+                        <button class="order-btn w-full gradient-blue text-white py-4 px-6 rounded-xl text-lg font-bold hover:shadow-xl transition-all duration-300 transform hover:scale-105" aria-label="Заказать товар со скидкой 50 процентов" data-analytics="main_product">
+                            🛒 ЗАКАЗАТЬ СО СКИДКОЙ 50%
+                        </button>
+                        <button class="w-full bg-gray-100 text-gray-700 py-3 px-6 rounded-xl font-semibold hover:bg-gray-200 transition-colors"
+                                onclick="document.getElementById('benefits').scrollIntoView({behavior: 'smooth'})">
+                            📋 Узнать больше о преимуществах
+                        </button>
+                    </div>
+                    
+                    <!-- СОЦИАЛЬНЫЕ ДОКАЗАТЕЛЬСТВА -->
+                    <div class="flex items-center space-x-4 text-sm text-gray-600">
+                        <div class="flex items-center space-x-1">
+                            <span>⭐⭐⭐⭐⭐</span>
+                            <span>4.9/5</span>
+                        </div>
+                        <div>👥 2,847 довольных клиентов</div>
+                        <div>📦 Осталось: 7 шт.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 2: ПРЕИМУЩЕСТВА ТОВАРА -->
+    <section id="benefits" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Почему выбирают <span class="gradient-text">CoolBreeze?</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Уникальные преимущества, которые делают наш вентилятор №1 выбором для создания идеального микроклимата
+                </p>
+            </div>
+            
+            <div class="benefits-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Преимущество 1 -->
+                <div class="scale-in bg-white p-8 rounded-2xl shadow-lg hover-scale transition-all duration-500">
+                    <div class="w-16 h-16 gradient-blue rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-2xl">❄️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Мгновенное охлаждение</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        Уникальная технология охлаждения льдом снижает температуру воздуха на 10-15°C всего за 30 секунд
+                    </p>
+                    <div class="text-center">
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                            Эффективность 95%
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Преимущество 2 -->
+                <div class="scale-in bg-white p-8 rounded-2xl shadow-lg hover-scale transition-all duration-500">
+                    <div class="w-16 h-16 gradient-purple rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-2xl">🌸</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Ароматерапия</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        Встроенный диффузор равномерно распределяет аромат эфирных масел по всему помещению
+                    </p>
+                    <div class="text-center">
+                        <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">
+                            100% натурально
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Преимущество 3 -->
+                <div class="scale-in bg-white p-8 rounded-2xl shadow-lg hover-scale transition-all duration-500">
+                    <div class="w-16 h-16 gradient-green rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-2xl">🔇</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Бесшумная работа</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        Инновационный мотор работает практически бесшумно - менее 30 дБ даже на максимальной мощности
+                    </p>
+                    <div class="text-center">
+                        <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                            Тише шепота
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Преимущество 4 -->
+                <div class="scale-in bg-white p-8 rounded-2xl shadow-lg hover-scale transition-all duration-500">
+                    <div class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-2xl">💡</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Атмосферная подсветка</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        7 режимов LED-подсветки создают уютную атмосферу и могут использоваться как ночник
+                    </p>
+                    <div class="text-center">
+                        <span class="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">
+                            7 цветов
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Преимущество 5 -->
+                <div class="scale-in bg-white p-8 rounded-2xl shadow-lg hover-scale transition-all duration-500">
+                    <div class="w-16 h-16 bg-gradient-to-r from-pink-400 to-red-500 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-2xl">🔋</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Питание от USB</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        Устройство работает от розетки, ноутбука или даже пауэрбанка — где угодно
+                    </p>
+                    <div class="text-center">
+                        <span class="inline-block bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-semibold">
+                            До 8 часов
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Преимущество 6 -->
+                <div class="scale-in bg-white p-8 rounded-2xl shadow-lg hover-scale transition-all duration-500">
+                    <div class="w-16 h-16 bg-gradient-to-r from-indigo-400 to-blue-600 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-2xl">📱</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Простое управление</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        Интуитивная панель управления с сенсорными кнопками и дистанционный пульт в комплекте
+                    </p>
+                    <div class="text-center">
+                        <span class="inline-block bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-semibold">
+                            Пульт в подарок
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 3: КАК ЭТО РАБОТАЕТ -->
+    <section id="how-works" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Как работает <span class="gradient-text">CoolBreeze?</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Простая настройка и использование за 3 шага. Посмотрите видео и убедитесь сами!
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- ВИДЕО БЛОК -->
+                <div class="relative bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl overflow-hidden p-4">
+  <div id="video-wrapper" class="aspect-[9/16] relative w-[320px] sm:w-[360px] md:w-[400px] max-h-[80vh] mx-auto">
+    <video
+      id="howItWorksVideo"
+      class="absolute inset-0 w-full h-full object-cover"
+      src="./media/video.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+    ></video>
+
+    <!-- Градиент -->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 z-10"></div>
+
+    <!-- Текст -->
+    <div class="absolute bottom-4 left-4 text-white z-20">
+      <div class="text-sm font-semibold">▶️ Демонстрация CoolBreeze</div>
+      <div class="text-xs opacity-80">Продолжительность: 1:08</div>
+    </div>
+
+    <!-- Метка -->
+    <div class="absolute bottom-4 right-4 bg-black/70 text-white px-3 py-1 rounded-full text-xs font-bold z-20">
+      СЪЁМНАЯ РУЧКА
+    </div>
+  </div>
+
+  <!-- Бейджи -->
+  <div class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold z-20">
+    🔴 LIVE DEMO
+  </div>
+  <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold z-20">
+    ✅ 100% РЕАЛЬНО
+  </div>
+</div>
+                
+                <!-- ИНСТРУКЦИЯ -->
+                <div class="space-y-20">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 gradient-blue rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">1</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Добавьте лёд и воду</h3>
+                            <p class="text-gray-600">
+                                Наполните резервуар холодной водой и добавьте кубики льда. Объем резервуара: 750 мл
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 gradient-purple rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">2</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Выберите режим</h3>
+                            <p class="text-gray-600">
+                                Настройте скорость вентилятора, добавьте аромат и выберите цвет подсветки одним нажатием
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 gradient-green rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">3</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Наслаждайтесь прохладой</h3>
+                            <p class="text-gray-600">
+                                Через 30 секунд почувствуйте ледяную прохладу, приятный аромат и мягкую подсветку
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ -->
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h4 class="font-bold text-gray-900 mb-4">⚡ Технические характеристики:</h4>
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <span class="font-semibold">Мощность:</span> 10W
+                            </div>
+                            <div>
+                                <span class="font-semibold">Питание:</span> От power bank
+                            </div>
+                            <div>
+                                <span class="font-semibold">Время работы:</span> 8 часов
+                            </div>
+                            <div>
+                                <span class="font-semibold">Уровень шума:</span> <30 дБ
+                            </div>
+                            <div>
+                                <span class="font-semibold">Объем резервуара:</span> 750 мл
+                            </div>
+                            <div>
+                                <span class="font-semibold">Размеры:</span> 20×20×25 см
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 4: СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ -->
+    <section class="py-20 bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 hide-block">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-red-500 text-white px-6 py-3 rounded-full text-lg font-bold mb-6 animate-pulse">
+                    🔥 ОГРАНИЧЕННОЕ ПРЕДЛОЖЕНИЕ!
+                </div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Специальная акция <span class="gradient-text">только сегодня!</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Успейте купить CoolBreeze со скидкой 50% и получить ценные подарки совершенно бесплатно!
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- ПРЕДЛОЖЕНИЕ -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl">
+                    <div class="text-center mb-8">
+                        <div class="text-6xl font-bold text-red-600 mb-2">50%</div>
+                        <div class="text-2xl font-bold text-gray-900">СКИДКА</div>
+                        <div class="text-gray-600">Экономия 3000 MDL</div>
+                    </div>
+                    
+                    <div class="price-block bg-gradient-to-r from-red-100 to-orange-100 p-6 rounded-xl border-2 border-red-200 mb-6">
+                        <div class="flex items-center justify-center space-x-4 mb-4">
+                            <div class="text-4xl font-bold text-red-600">2990 MDL</div>
+                            <div class="text-2xl text-gray-500 line-through">2500 MDL</div>
+                        </div>
+                        <div class="text-center text-sm text-gray-600">
+                            💳 Рассрочка 0% на 12 месяцев = 249 MDL/мес
+                        </div>
+                    </div>
+                    
+                    <!-- ТАЙМЕР -->
+                    <div class="bg-gray-900 text-white p-4 rounded-xl text-center mb-6">
+                        <div class="text-sm mb-2">⏰ До конца акции осталось:</div>
+                        <div id="countdown" class="text-2xl font-bold text-red-400">23:59:47</div>
+                    </div>
+                    
+                    <button class="order-btn w-full gradient-blue text-white py-4 px-6 rounded-xl text-lg font-bold hover:shadow-xl transition-all duration-300 transform hover:scale-105 mb-4" aria-label="Оформить заказ со скидкой 50 процентов" data-analytics="special_offer">
+                        🛒 ЗАКАЗАТЬ СО СКИДКОЙ 50%
+                    </button>
+                    
+                    <div class="text-center text-sm text-gray-600">
+                        ⚡ Быстрый заказ за 30 секунд
+                    </div>
+                </div>
+                
+                <!-- ПОДАРКИ -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gray-900 text-center mb-8">
+                        🎁 Подарки к заказу:
+                    </h3>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
+                                <span class="text-2xl">🎮</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Пульт дистанционного управления</h4>
+                                <p class="text-gray-600 text-sm">Управляйте устройством с расстояния до 10 метров</p>
+                                <div class="text-blue-600 font-semibold">Стоимость: 990 MDL</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center">
+                                <span class="text-2xl">🌸</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Набор эфирных масел</h4>
+                                <p class="text-gray-600 text-sm">5 ароматов: лаванда, эвкалипт, мята, лимон, роза</p>
+                                <div class="text-purple-600 font-semibold">Стоимость: 1490 MDL</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center">
+                                <span class="text-2xl">🧊</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Формочки для льда</h4>
+                                <p class="text-gray-600 text-sm">Специальные формы для максимального охлаждения</p>
+                                <div class="text-green-600 font-semibold">Стоимость: 590 MDL</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center p-4 bg-yellow-100 rounded-xl">
+                        <div class="text-lg font-bold text-gray-900">
+                            Общая стоимость подарков: <span class="text-green-600">3070 MDL</span>
+                        </div>
+                        <div class="text-sm text-gray-600">При заказе сегодня - БЕСПЛАТНО!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 5: ГАРАНТИЯ И ДОСТАВКА -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Ваша <span class="gradient-text">безопасность</span> - наша гарантия
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Мы настолько уверены в качестве CoolBreeze, что предоставляем максимальные гарантии для вашего спокойствия
+                </p>
+            </div>
+            
+            <div class="guarantee-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <!-- Гарантия 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 gradient-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🛡️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Гарантия качества</h3>
+                    <p class="text-gray-600 mb-4">2 года официальной гарантии от производителя</p>
+                    <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                        24 месяца
+                    </div>
+                </div>
+                
+                <!-- Гарантия 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 gradient-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🚚</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Бесплатная доставка</h3>
+                    <p class="text-gray-600 mb-4">По всей Молдове курьером или в пункт выдачи</p>
+                    <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                        0 MDL доставка
+                    </div>
+                </div>
+                
+                <!-- Гарантия 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 gradient-purple rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🔄</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Возврат 14 дней</h3>
+                    <p class="text-gray-600 mb-4">Не понравился товар? Вернём деньги без вопросов</p>
+                    <div class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">
+                        100% возврат
+                    </div>
+                </div>
+                
+                <!-- Гарантия 4 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Быстрая доставка</h3>
+                    <p class="text-gray-600 mb-4">1-3 дня в пределах Кишинёва<br>3-7 дней в регионах</p>
+                    <div class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">
+                        1-3 дня
+                    </div>
+                </div>
+            </div>
+            
+            <!-- СПОСОБЫ ДОСТАВКИ -->
+            <div class="bg-gray-50 p-8 rounded-2xl">
+                <h3 class="text-2xl font-bold text-gray-900 text-center mb-8">
+                    🚛 Способы доставки
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🏠</span>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Курьер до двери</h4>
+                        <p class="text-gray-600 text-sm mb-2">Доставка прямо до вашего дома</p>
+                        <div class="text-green-600 font-semibold">БЕСПЛАТНО</div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">📦</span>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Пункт выдачи</h4>
+                        <p class="text-gray-600 text-sm mb-2">Более 15,000 пунктов по Молдове</p>
+                        <div class="text-green-600 font-semibold">БЕСПЛАТНО</div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">📮</span>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Nova Poshta</h4>
+                        <p class="text-gray-600 text-sm mb-2">Доставка в любую точку или почтомат Молдовы</p>
+                        <div class="text-green-600 font-semibold">БЕСПЛАТНО</div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center text-3xl font-bold mb-4">
+                <img src="./IMG/logo.png" alt="logo" class="max-w-[5rem] mr-2"/>
+                NEOSHOP
+                </div>
+                <p class="text-gray-400 mb-6">Революционные решения для идеального микроклимата в вашем доме</p>
+                
+                <div class="flex flex-wrap justify-center items-center gap-8 mb-8">
+                    <a href="modal_fix_test.html" class="text-blue-400 hover:text-blue-300" style="display: none;">🔧 Тест модалок</a>
+                    <a href="tel:+37360504199" class="text-blue-400 hover:text-blue-300">📞 +373-605-04-199</a>
+                </div>
+                
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-500">&copy; 2024 NEOSHOP CoolBreeze. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО ЗАКАЗА -->
+    <div id="order-modal" class="modal fixed inset-0 z-50 flex items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="order-modal-title" aria-describedby="order-modal-summary">
+        <div class="modal-content bg-white rounded-lg shadow-xl max-w-md w-full mx-4">
+            <div class="p-6 border-b">
+                <div class="flex justify-between items-center">
+                    <h2 id="order-modal-title" class="text-xl font-semibold">🛒 Оформить заказ</h2>
+                    <button class="modal-close text-gray-400 hover:text-gray-600" data-modal="order-modal" aria-label="Закрыть модальное окно">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-6">
+                <div id="order-modal-summary" class="mb-4 p-4 bg-blue-50 rounded-lg">
+                    <div class="font-semibold">CoolBreeze Arctic Pro 3-в-1</div>
+                    <div class="text-blue-600 font-bold text-lg">1600 MDL <span class="text-sm text-gray-500 line-through">2500MDL</span></div>
+                    <div class="text-sm text-green-600">✅ Экономия 900 MDL + подарки на 3000 MDL</div>
+                </div>
+                
+                <form id="order-form" class="space-y-4" action="https://formspree.io/f/xyzpbewo" method="POST">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Ваше имя:</label>
+                        <input type="text" name="name" required 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                               placeholder="Введите имя">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Ваш телефон:</label>
+                        <input type="tel" name="phone" required 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                               placeholder="+(373) 123-45-678">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Город доставки:</label>
+                        <input type="text" name="city" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                               placeholder="Кишинёв">
+                    </div>
+                    
+                    <div class="text-sm text-gray-600 bg-green-50 p-3 rounded-lg">
+                        📞 Наш менеджер перезвонит вам в течение 5 минут для подтверждения заказа
+                    </div>
+                    
+                    <button type="submit" class="w-full gradient-blue text-white py-3 px-4 rounded-md hover:shadow-lg transition-all duration-300 font-semibold">
+                        📞 ЗАКАЗАТЬ СО СКИДКОЙ 50%
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- LIBS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" defer></script>
+    <!-- JAVASCRIPT -->
+    <script>
+        // ИНИЦИАЛИЗАЦИЯ
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeAnalytics();
+            initializeOrderButtons();
+            initializeModals();
+            initializeTimer();
+        });
+
+        // КНОПКИ ЗАКАЗА
+        function initializeOrderButtons() {
+            const orderButtons = document.querySelectorAll('.order-btn');
+            orderButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    trackEvent('order_cta_click', { source: this.dataset.analytics || 'unknown' });
+                    showOrderModal();
+                });
+            });
+        }
+
+        // МОДАЛЬНЫЕ ОКНА
+        function initializeModals() {
+            const closeButtons = document.querySelectorAll('.modal-close');
+            closeButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const modalId = this.getAttribute('data-modal') || this.closest('.modal').id;
+                    closeModal(modalId);
+                });
+            });
+
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === modal) {
+                        e.preventDefault();
+                        closeModal(modal.id);
+                    }
+                });
+                
+                const modalContent = modal.querySelector('.modal-content');
+                if (modalContent) {
+                    modalContent.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                    });
+                }
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    const activeModal = document.querySelector('.modal.active');
+                    if (activeModal) {
+                        closeModal(activeModal.id);
+                    }
+                }
+            });
+
+            const orderForm = document.getElementById('order-form');
+            if (orderForm) {
+                orderForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    handleOrderSubmit();
+                });
+            }
+        }
+
+        // Автоподбор фона под главное изображение по среднему цвету
+        (function matchMainImageBackground(){
+            const img = document.getElementById('hero-image');
+            const visual = document.getElementById('hero-visual');
+            if (!img || !visual) return;
+            if (img.complete) compute(); else img.onload = compute;
+
+            function compute(){
+                try {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    const w = canvas.width = 40;
+                    const h = canvas.height = 40;
+                    ctx.drawImage(img, 0, 0, w, h);
+                    const data = ctx.getImageData(0, 0, w, h).data;
+                    let r=0,g=0,b=0,count=0;
+                    for (let i=0;i<data.length;i+=4){
+                        const R=data[i], G=data[i+1], B=data[i+2], A=data[i+3];
+                        if (A < 128) continue;
+                        r+=R; g+=G; b+=B; count++;
+                    }
+                    if (!count) return;
+                    r=Math.round(r/count); g=Math.round(g/count); b=Math.round(b/count);
+                    const base = `rgb(${r}, ${g}, ${b})`;
+                    const light = `rgba(${Math.min(r+30,255)}, ${Math.min(g+30,255)}, ${Math.min(b+30,255)}, 0.6)`;
+                    const lighter = `rgba(${Math.min(r+60,255)}, ${Math.min(g+60,255)}, ${Math.min(b+60,255)}, 0.6)`;
+                    visual.style.setProperty('--c1', lighter);
+                    visual.style.setProperty('--c2', light);
+                    visual.style.setProperty('--c3', base);
+                    visual.style.setProperty('--c4', lighter);
+                } catch(e) {
+                    console.warn('BG auto-match failed', e);
+                }
+            }
+        })();
+
+        // АНАЛИТИКА
+        function initializeAnalytics() {
+            window.dataLayer = window.dataLayer || [];
+        }
+        function trackEvent(eventName, params = {}) {
+            try {
+                window.dataLayer.push({ event: eventName, ...params });
+            } catch (_) {}
+            console.log('Analytics:', eventName, params);
+        }
+
+        let lastFocusedElement = null;
+        function trapFocus(container) {
+            const selectors = [
+                'a[href]','area[href]','input:not([disabled])','select:not([disabled])','textarea:not([disabled])',
+                'button:not([disabled])','iframe','[tabindex]:not([tabindex="-1"])','[contenteditable="true"]'
+            ];
+            const focusable = Array.from(container.querySelectorAll(selectors.join(','))).filter(el => el.offsetParent !== null);
+            if (focusable.length === 0) return;
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+            first.focus();
+            container.addEventListener('keydown', function(e) {
+                if (e.key !== 'Tab') return;
+                if (e.shiftKey && document.activeElement === first) {
+                    e.preventDefault();
+                    last.focus();
+                } else if (!e.shiftKey && document.activeElement === last) {
+                    e.preventDefault();
+                    first.focus();
+                }
+            });
+        }
+
+        // ПОКАЗАТЬ МОДАЛКУ ЗАКАЗА
+        function showOrderModal() {
+            const modal = document.getElementById('order-modal');
+            if (modal) {
+                lastFocusedElement = document.activeElement;
+                modal.style.display = 'flex';
+                document.body.classList.add('modal-open');
+                
+                setTimeout(() => {
+                    modal.classList.add('active');
+                }, 10);
+                
+                const firstInput = modal.querySelector('input[name="name"]');
+                if (firstInput) {
+                    setTimeout(() => firstInput.focus(), 300);
+                }
+                trapFocus(modal);
+                trackEvent('modal_open', { modalId: 'order-modal' });
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal && modal.classList.contains('active')) {
+                modal.classList.remove('active');
+                
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                    document.body.classList.remove('modal-open');
+                    if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+                        lastFocusedElement.focus();
+                    }
+                }, 300);
+                trackEvent('modal_close', { modalId });
+            }
+        }
+
+        // ОБРАБОТКА ОТПРАВКИ ЗАКАЗА
+        function showToast(message) {
+    const toast = document.createElement('div');
+    toast.textContent = message;
+    toast.style.position = 'fixed';
+    toast.style.bottom = '20px';
+    toast.style.left = '50%';
+    toast.style.transform = 'translateX(-50%)';
+    toast.style.background = 'rgba(0,0,0,0.8)';
+    toast.style.color = 'white';
+    toast.style.padding = '12px 20px';
+    toast.style.borderRadius = '8px';
+    toast.style.fontSize = '16px';
+    toast.style.zIndex = 9999;
+    toast.style.opacity = '0';
+    toast.style.transition = 'opacity 0.3s ease';
+
+    document.body.appendChild(toast);
+
+    requestAnimationFrame(() => {
+        toast.style.opacity = '1';
+    });
+
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.addEventListener('transitionend', () => toast.remove());
+    }, 3500);
+}
+
+async function handleOrderSubmit() {
+    const form = document.getElementById('order-form');
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+
+    if (!data.name || !data.phone) {
+        showToast('Пожалуйста, заполните обязательные поля');
+        return;
+    }
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '⏳ Отправка заказа...';
+    submitBtn.disabled = true;
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            closeModal('order-modal');
+            showToast(`Спасибо за заказ, ${data.name}! Ваш заказ принят. Наш менеджер свяжется с вами по номеру ${data.phone} в течение 5 минут.`);
+            form.reset();
+            trackEvent && trackEvent('order_submit', { source: 'order_modal' });
+        } else {
+            showToast('Ошибка при отправке. Попробуйте позже.');
+        }
+    } catch (error) {
+        showToast('Ошибка сети. Попробуйте позже.');
+    } finally {
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+    }
+}
+
+        // ТАЙМЕР ОБРАТНОГО ОТСЧЕТА
+        function initializeTimer() {
+            const CAMPAIGN_DEADLINE_ISO = null;
+            const DEADLINE_STORAGE_KEY = 'saleDeadline';
+            let deadline = null;
+            if (CAMPAIGN_DEADLINE_ISO) {
+                deadline = new Date(CAMPAIGN_DEADLINE_ISO).getTime();
+            } else {
+                const saved = localStorage.getItem(DEADLINE_STORAGE_KEY);
+                const savedNum = saved ? parseInt(saved, 10) : NaN;
+                if (saved && !Number.isNaN(savedNum) && savedNum > Date.now()) {
+                    deadline = savedNum;
+                } else {
+                    deadline = Date.now() + 24 * 60 * 60 * 1000;
+                    localStorage.setItem(DEADLINE_STORAGE_KEY, String(deadline));
+                }
+            }
+
+            let expiredHandled = false;
+            function setExpiredState() {
+                if (expiredHandled) return;
+                expiredHandled = true;
+                document.querySelectorAll('.time-left-label').forEach(n => n.textContent = 'Акция завершена');
+                document.querySelectorAll('#timer, #countdown').forEach(el => el.textContent = '00:00:00');
+                document.querySelectorAll('.order-btn').forEach(btn => {
+                    btn.setAttribute('disabled', 'true');
+                    btn.classList.add('opacity-60','cursor-not-allowed');
+                    if (!btn.dataset.originalText) btn.dataset.originalText = btn.innerText;
+                    btn.innerText = 'Акция завершена';
+                });
+                trackEvent('campaign_expired');
+            }
+
+            function updateTimer() {
+                const now = Date.now();
+                const timeLeft = Math.max(0, deadline - now);
+                const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+                const timerText = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                document.querySelectorAll('#timer, #countdown').forEach(element => { if (element) element.textContent = timerText; });
+                if (timeLeft <= 0) setExpiredState();
+            }
+
+            document.querySelectorAll('div').forEach(el => {
+                if (el.textContent && el.textContent.includes('До конца акции')) el.classList.add('time-left-label');
+            });
+
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+
+        console.log('✅ NEOSHOP CoolBreeze загружен успешно!');
+        console.log('🚀 Новая улучшенная версия с полным функционалом!');
+
+        // СИСТЕМА ПЕРЕВОДОВ RU/EN/RO
+        const i18n = {
+            ru: {
+                heroBadge: '🔥 СУПЕР АКЦИЯ -50% - ТОЛЬКО СЕГОДНЯ!',
+                heroTitle: 'Забудьте о духоте! <span class="gradient-text">Ледяная прохлада</span> + ароматы тропиков в 1 устройстве',
+                heroSubtitle: 'Революционный вентилятор CoolBreeze 3-в-1 с охлаждением льдом, ароматизацией и LED-подсветкой. Создайте идеальный микроклимат в любом помещении за считанные секунды!',
+                heroCta: '🛒 Заказать со скидкой 50%',
+                heroSeeHow: '▶️ Посмотреть как работает',
+                timeLeft: '⏰ До конца акции осталось:',
+                mainProductMore: '📋 Узнать больше о преимуществах',
+                benefitsTitle: 'Почему выбирают <span class="gradient-text">CoolBreeze?</span>',
+                howTitle: 'Как работает <span class="gradient-text">CoolBreeze?</span>',
+                specialTitle: 'Специальная акция <span class="gradient-text">только сегодня!</span>',
+                giftsTitle: '🎁 Подарки к заказу:',
+                guaranteeTitle: 'Ваша <span class="gradient-text">безопасность</span> - наша гарантия',
+                deliveryTitle: '🚛 Способы доставки',
+                footerAbout: 'Революционные решения для идеального микроклимата в вашем доме',
+                lpTitle: 'Товары <span class="gradient-text">из нашей линейки</span>',
+                lpSubtitle: 'Подобрали для вас популярные и полезные товары по отличным ценам',
+                modalOrderTitle: '🛒 Оформить заказ',
+                modalOrderBtn: '📞 ЗАКАЗАТЬ СО СКИДКОЙ 50%'
+            },
+            en: {
+                heroBadge: '🔥 SUPER DEAL -50% - TODAY ONLY!',
+                heroTitle: 'Forget the heat! <span class="gradient-text">Ice-cold breeze</span> + tropical aroma in 1 device',
+                heroSubtitle: 'Revolutionary CoolBreeze 3-in-1: ice cooling, aroma, LED light. Create perfect microclimate in seconds!',
+                heroCta: '🛒 Order with 50% OFF',
+                heroSeeHow: '▶️ See how it works',
+                timeLeft: '⏰ Time left until the end of the offer:',
+                mainProductMore: '📋 Learn more about benefits',
+                benefitsTitle: 'Why choose <span class="gradient-text">CoolBreeze?</span>',
+                howTitle: 'How does <span class="gradient-text">CoolBreeze</span> work?',
+                specialTitle: 'Special offer <span class="gradient-text">today only!</span>',
+                giftsTitle: '🎁 Gifts included:',
+                guaranteeTitle: 'Your <span class="gradient-text">safety</span> is our guarantee',
+                deliveryTitle: '🚛 Delivery methods',
+                footerAbout: 'Revolutionary solutions for a perfect home microclimate',
+                lpTitle: 'Products <span class="gradient-text">from our line</span>',
+                lpSubtitle: 'Popular and useful products at great prices',
+                modalOrderTitle: '🛒 Place an order',
+                modalOrderBtn: '📞 ORDER WITH 50% OFF'
+            },
+            ro: {
+                heroBadge: '🔥 SUPER OFERTĂ -50% - DOAR ASTĂZI!',
+                heroTitle: 'Uită de căldură! <span class="gradient-text">Briză înghețată</span> + aromă tropicală într-un singur dispozitiv',
+                heroSubtitle: 'Revoluționarul CoolBreeze 3-în-1: răcire cu gheață, aromă și iluminare LED. Creează microclimatul perfect în câteva secunde!',
+                heroCta: '🛒 Comandă cu reducere 50%',
+                heroSeeHow: '▶️ Vezi cum funcționează',
+                timeLeft: '⏰ Timp rămas până la finalul ofertei:',
+                mainProductMore: '📋 Află mai multe despre avantaje',
+                benefitsTitle: 'De ce alegi <span class="gradient-text">CoolBreeze?</span>',
+                howTitle: 'Cum funcționează <span class="gradient-text">CoolBreeze</span>?',
+                specialTitle: 'Ofertă specială <span class="gradient-text">doar astăzi!</span>',
+                giftsTitle: '🎁 Cadouri incluse:',
+                guaranteeTitle: '<span class="gradient-text">Siguranța</span> ta – garanția noastră',
+                deliveryTitle: '🚛 Metode de livrare',
+                footerAbout: 'Soluții revoluționare pentru un microclimat perfect acasă',
+                lpTitle: 'Produse <span class="gradient-text">din gama noastră</span>',
+                lpSubtitle: 'Am selectat produse populare și utile la prețuri excelente',
+                modalOrderTitle: '🛒 Plasează comanda',
+                modalOrderBtn: '📞 COMANDĂ CU REDUCERE 50%'
+            }
+        };
+
+        function t(key){
+            const lang = localStorage.getItem('lang') || 'ru';
+            return (i18n[lang] && i18n[lang][key]) || (i18n['ru'][key] || '');
+        }
+
+        function applyTranslations(){
+            const mapping = [
+                ['.hero-section .inline-block', 'heroBadge'],
+                ['.hero-section h1', 'heroTitle'],
+                ['.hero-section p.text-xl', 'heroSubtitle'],
+                ['.hero-section .order-btn[data-analytics="hero"]', 'heroCta'],
+                ['.hero-section button[onclick*="how-works"]', 'heroSeeHow'],
+                ['.hero-section .text-sm', 'timeLeft'],
+                ['#benefits h2', 'benefitsTitle'],
+                ['#how-works h2', 'howTitle'],
+                ['section.py-20.bg-gradient-to-br h2', 'specialTitle'],
+                ['section.py-20.bg-gradient-to-br h3', 'giftsTitle'],
+                ['section.py-20.bg-white h2', 'guaranteeTitle'],
+                ['#landing-products h2', 'lpTitle'],
+                ['#landing-products p.text-xl', 'lpSubtitle'],
+                ['#order-modal h2#order-modal-title', 'modalOrderTitle'],
+                ['#order-modal button[type="submit"]', 'modalOrderBtn']
+            ];
+            mapping.forEach(([selector, key]) => {
+                const el = document.querySelector(selector);
+                if (!el) return;
+                const html = t(key);
+                if (html.includes('<span')) el.innerHTML = html; else el.textContent = html;
+            });
+        }
+
+        const langSelect = document.getElementById('lang-select');
+        if (langSelect) {
+            const current = localStorage.getItem('lang') || 'ru';
+            langSelect.value = current;
+            applyTranslations();
+            langSelect.addEventListener('change', () => {
+                localStorage.setItem('lang', langSelect.value);
+                applyTranslations();
+            });
+        } else {
+            applyTranslations();
+        }
+    </script>
+    
+    <script>
+        // ДАННЫЕ ТОВАРОВ
+        const landingProducts = [
+            {
+                id: 'p1',
+                title: 'Вентилятор CoolBreeze',
+                description: 'Вентилятор CoolBreeze – мощный и стильный! Компактный дизайн, 3 скорости, бесшумная работа. Идеален для дома, офиса и летнего отдыха.',
+                price: 250,
+                oldPrice: 350,
+                image: './IMG/vint.jpg',
+                badge: 'Хит'
+            },
+            {
+                id: 'p2',
+                title: 'Термосумка для пикника',
+                description: 'Термосумка 27.5×23×46,5 см сохранит продукты свежими, а напитки – холодными. Компактная и стильная.',
+                price: 149,
+                oldPrice: null,
+                image: './IMG/termosuma.webp',
+                badge: 'NEW'
+            },
+            {
+                id: 'p3',
+                title: 'Маска для сна Mirate',
+                description: 'Маска для сна с гелевой вставкой – комфорт, 100% затемнение и охлаждающий эффект.',
+                price: 45,
+                oldPrice: null,
+                image: './IMG/mask.jpg',
+                badge: ''
+            },
+            {
+                id: 'p4',
+                title: 'Ночник-увлажнитель Мишка 300 мл',
+                description: 'Мягкая подсветка, бесшумная работа и ароматерапия. USB-питание, объем 300 мл.',
+                price: 139,
+                oldPrice: null,
+                image: './IMG/nochnik.jpg',
+                badge: 'Топ'
+            },
+            {
+                id: 'p5',
+                title: 'Озоновый очиститель для холодильника',
+                description: 'Устраняет запахи, бактерии и плесень. Компактный и безопасный.',
+                price: 112,
+                oldPrice: null,
+                image: './IMG/ozonoviy.webp',
+                badge: ''
+            },
+            {
+                id: 'p6',
+                title: 'Антигравитационный увлажнитель',
+                description: 'Парящие капли создают идеальный микроклимат, бесшумно увлажняя пространство.',
+                price: 299,
+                oldPrice: null,
+                image: './IMG/uvlajnitel.jpg',
+                badge: 'WOW'
+            },
+            {
+                id: 'p7',
+                title: 'Термометр, гигрометр + часы HTC-1',
+                description: 'Точные замеры температуры и влажности. Ваш комфорт под контролем!',
+                price: 67,
+                oldPrice: null,
+                image: './IMG/termometr.jpg',
+                badge: ''
+            },
+            {
+                id: 'p8',
+                title: 'Солнцезащитный крем CuteLover SPF 50, 50ml',
+                description: 'Легкая формула без липкости, водостойкий эффект и бережный уход.',
+                price: 29,
+                oldPrice: null,
+                image: './IMG/SPF.jpg',
+                badge: 'SPF'
+            },
+            {
+                id: 'p9',
+                title: 'Ароматический диффузор 50 мл',
+                description: 'Натуральные масла, нежные ароматы. Доступны разные варианты.',
+                price: 89,
+                oldPrice: null,
+                image: './IMG/difuzor-aromatic.webp',
+                badge: 'Арома'
+            }
+        ];
+
+        // РЕНДЕР КАРТОЧЕК
+        (function renderLandingProducts(){
+            const grid = document.getElementById('landing-products-grid');
+            if (!grid) return;
+            grid.innerHTML = landingProducts.map(p => `
+                <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer group" data-product-id="${p.id}">
+                    <div class="relative h-56 bg-gray-100 overflow-hidden">
+                        <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                        ${p.badge ? `<div class=\"absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded\">${p.badge}</div>` : ''}
+                        ${p.oldPrice ? `<div class=\"absolute top-3 right-3 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded\">-${Math.round((1 - p.price/p.oldPrice)*100)}%</div>` : ''}
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">${p.title}</h3>
+                        <p class="text-gray-600 text-sm line-clamp-2">${p.description}</p>
+                        <div class="mt-3 flex items-baseline gap-2">
+                            <span class="text-2xl font-bold text-blue-600">${p.price} MDL</span>
+                            ${p.oldPrice ? `<span class=\"text-sm text-gray-400 line-through\">${p.oldPrice} MDL</span>` : ''}
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+
+            grid.querySelectorAll('article').forEach(card => {
+                card.addEventListener('click', () => {
+                    const id = card.getAttribute('data-product-id');
+                    const p = landingProducts.find(x => x.id === id);
+                    if (p) showLandingProductModal(p);
+                });
+            });
+        })();
+
+        // МОДАЛКА ТОВАРА
+        function ensureLandingModalExists(){
+            if (document.getElementById('landing-product-modal')) return;
+            const wrapper = document.createElement('div');
+            wrapper.innerHTML = `
+            <div id="landing-product-modal" class="modal fixed inset-0 z-50 flex items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="landing-product-title">
+                <div class="modal-content bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4">
+                    <div class="p-6 border-b flex justify-between items-center">
+                        <h2 id="landing-product-title" class="text-xl font-semibold">Просмотр товара</h2>
+                        <button class="modal-close text-gray-400 hover:text-gray-600" data-modal="landing-product-modal" aria-label="Закрыть модальное окно">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <img id="lp-image" src="" alt="" class="w-full h-64 object-cover rounded-lg">
+                            </div>
+                            <div>
+                                <h3 id="lp-title" class="text-xl font-bold mb-2"></h3>
+                                <p id="lp-desc" class="text-gray-600 mb-4"></p>
+                                <div class="mb-4">
+                                    <span id="lp-price" class="text-2xl font-bold text-blue-600 mr-2"></span>
+                                    <span id="lp-old" class="text-sm text-gray-400 line-through"></span>
+                                </div>
+                                <button class="order-btn w-full gradient-blue text-white py-3 px-4 rounded-md hover:shadow-lg transition-all duration-300 font-semibold" data-analytics="landing_product">
+                                    🛒 Оформить заказ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+            document.body.appendChild(wrapper.firstElementChild);
+            initializeModals();
+        }
+
+        function showLandingProductModal(p){
+            ensureLandingModalExists();
+            document.getElementById('lp-image').src = p.image;
+            document.getElementById('lp-image').alt = p.title;
+            document.getElementById('lp-title').textContent = p.title;
+            document.getElementById('lp-desc').textContent = p.description;
+            document.getElementById('lp-price').textContent = `${p.price} MDL`;
+            const old = document.getElementById('lp-old');
+            if (p.oldPrice) { old.textContent = `${p.oldPrice} MDL`; old.classList.remove('hidden'); } else { old.textContent=''; old.classList.add('hidden'); }
+
+            const btn = document.querySelector('#landing-product-modal .order-btn');
+            if (btn) {
+                btn.onclick = () => {
+                    closeModal('landing-product-modal');
+                    showOrderModal();
+                };
+            }
+
+            const modal = document.getElementById('landing-product-modal');
+            if (modal) {
+                modal.style.display = 'flex';
+                document.body.classList.add('modal-open');
+                setTimeout(()=> modal.classList.add('active'), 10);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+  const video = document.getElementById("howItWorksVideo");
+  const wrapper = document.getElementById("videoWrapper");
+
+  if (!video || !wrapper) return;
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  ScrollTrigger.create({
+    trigger: wrapper,
+    start: "top 80%",
+    once: true,
+    onEnter: () => {
+      video.play().catch((err) => {
+        console.warn("Автозапуск не удался:", err);
+      });
+    }
+  });
+});
+    </script>
+</body>
+</html>
