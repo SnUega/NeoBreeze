@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        
+        /* АНИМАЦИИ */
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translate(0); } }
+        @keyframes scaleIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        @keyframes shine { 
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            50% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+            100% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+        }
+        @keyframes pulse-custom { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.8; } }
+        
+        /* ГРАДИЕНТНЫЙ ТЕКСТ */
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* ГРАДИЕНТНЫЕ ФОНЫ */
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .gradient-blue { background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%); }
+        .gradient-purple { background: linear-gradient(135deg, #8b5cf6 0%, #5b21b6 100%); }
+        .gradient-green { background: linear-gradient(135deg, #10b981 0%, #047857 100%); }
+        .dynamic-bg { background: radial-gradient(1000px 600px at 30% 40%, var(--c1, #e0f2fe), transparent 60%),
+                                   radial-gradient(800px 500px at 70% 60%, var(--c2, #ede9fe), transparent 60%),
+                                   linear-gradient(135deg, var(--c3, #eff6ff) 0%, var(--c4, #f5f3ff) 100%); }
+        
+        /* БЛОК ЦЕНЫ С ЭФФЕКТОМ */
+        .price-block {
+            border: 2px solid #ef4444;
+            position: relative;
+            overflow: hidden;
+        }
+        .price-block::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+        
+        /* ЭФФЕКТЫ НАВЕДЕНИЯ */
+        .hover-scale:hover { transform: translateY(-8px) scale(1.02); }
+        .hover-glow:hover { box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3); }
+        
+        /* АНИМАЦИИ КОМПОНЕНТОВ */
+        .fade-in-up { animation: fadeInUp 0.8s ease-out; }
+        .scale-in { animation: scaleIn 0.6s ease-out; animation-fill-mode: both; }
+        .scale-in:nth-child(2) { animation-delay: 0.1s; }
+        .scale-in:nth-child(3) { animation-delay: 0.2s; }
+        .scale-in:nth-child(4) { animation-delay: 0.3s; }
+        
+        /* ПУЛЬСИРУЮЩИЙ ФОН */
+        .pulse-bg { animation: pulse-custom 4s infinite; }
+        
+        /* FLOATING ELEMENTS */
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        header {
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(90deg, #758aeb 0%,#9ba9ec 40%,#a4aee0 45%, #7447a0 75%,#758aeb 100%);
+            background-size: 200% 100%;
+            animation: gradientMove 3s linear infinite;
+        }
+
+        @keyframes gradientMove {
+            0% {
+            background-position: 0% 50%;
+            }
+            100% {
+            background-position: 200% 50%;
+            }
+        }
+
+        /* МОБИЛЬНАЯ НАСТРОЙКА HERO (<= 768px) */
+        @media (max-width: 768px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .benefits-grid { grid-template-columns: 1fr; }
+            .guarantee-grid { grid-template-columns: 1fr; }
+            /* Лёгкое осветление фона для повышения контраста текста */
+            .hero-section { padding-top: 0 !important; margin-top: -2rem; } /* тянет подложку к самому верху секции */
+            .hero-section .text-left { padding-top: 2.5rem; } /* воздух сверху под бейдж акции */
+            .hero-section {
+                background-position: 26% 15%; /* сдвигаем кадр правее и чуть вверх для лучшего кадра */
+                background-repeat: no-repeat;
+            }
+            .hero-section::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.35) 100%); /* затемняем фон для читабельности текста */
+                pointer-events: none;
+            }
+
+            /* Мягкая склейка низа hero с bg-gray-50 следующего блока */
+            .hero-section::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 5%;
+                background: linear-gradient(to bottom, rgba(249, 250, 251, 0) 0%, rgba(249, 250, 251, 1) 100%);
+                pointer-events: none;
+                z-index: 5;
+            }
+
+            /* Убираем стеклянную подложку: чистый текст поверх тёмной маски */
+            .hero-section .text-left {
+                background: transparent;
+                -webkit-backdrop-filter: none;
+                backdrop-filter: none;
+                box-shadow: none;
+                padding: 0.5rem 0 0.75rem;
+                margin: 0;
+                position: relative;
+                z-index: 10;
+            }
+
+            /* На всякий случай поднимем ключевые элементы над ::before */
+            .hero-section h1,
+            .hero-section p,
+            .hero-section .order-btn,
+            .hero-section button {
+                position: relative;
+                z-index: 11;
+            }
+
+            /* Контраст текста на затемнённом фоне */
+            .hero-section h1 { color: #ffffff !important; }
+            .hero-section p { color: rgba(255,255,255,0.92) !important; }
+
+            /* Мобильные размеры бейджа (оставляем прыжок) */
+            .hero-section .promo-badge { padding: 0.5rem 1rem !important; font-size: 0.775rem !important; margin-bottom: 1rem !important; }
+
+            /* Мобильные размеры кнопок */
+            .hero-section .order-btn { padding: 0.75rem 1rem !important; font-size: 1rem !important; }
+            .hero-section button[onclick*='how-works'] { padding: 0.75rem 1rem !important; font-size: 1rem !important; background-color: rgba(255,255,255,0.9) !important; }
+
+            /* Мягкая склейка верха следующего блока (#landing-products) с героем */
+            #landing-products { position: relative; }
+            #landing-products::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -1px;
+                height: 5%;
+                background: linear-gradient(to top, rgba(249, 250, 251, 0) 0%, rgba(249, 250, 251, 1) 100%);
+                pointer-events: none;
+                z-index: 1;
+            }
+        }
+        
+        /* МОДАЛЬНЫЕ ОКНА */
+        .modal { 
+            display: none; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .modal.active { 
+            display: flex; 
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            padding: 0;
+            margin: auto;
+            max-width: 90%;
+            max-height: 90%;
+            transform: scale(0.7);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: all 0.2s ease;
+        }
+        
+        .modal-close:hover {
+            background: rgba(0, 0, 0, 0.2);
+            transform: rotate(90deg);
+        }
+        
+        /* ПРЕДОТВРАЩЕНИЕ СКРОЛЛА ПРИ ОТКРЫТОЙ МОДАЛКЕ */
+        body.modal-open {
+            overflow: hidden;
+            padding-right: 17px;
+        }
+
+        .hide-block {
+            display: none;
+        }
